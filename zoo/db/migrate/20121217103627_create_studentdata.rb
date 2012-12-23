@@ -2,10 +2,10 @@ class CreateStudentdata < ActiveRecord::Migration
   def change
     create_table :studentdata do |t|
       t.string :name
-      t.string :class
+      t.string :year
       t.string :grade
       t.string :seatnumber
-      t.string :group
+      t.string :grouping
       t.string :job
       t.string :pettype
       t.string :food

@@ -1,3 +1,3 @@
 class Studentdata < ActiveRecord::Base
-  attr_accessible :class, :food, :grade, :group, :job, :name, :petnumber, :pettype, :seatnumber
+  attr_accessible :year, :food, :grade, :grouping, :job, :name, :petnumber, :pettype, :seatnumber
 end
