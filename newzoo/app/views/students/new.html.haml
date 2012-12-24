@@ -1,0 +1,35 @@
+%h2 Create New Student
+
+= form_tag students_path, :method => :post do
+
+  = label :student, :a, 'a'
+  = text_field :student, :a
+
+  = label :student, :b, 'b'
+  = text_field :student, :b
+  
+  = label :student, :c, 'c'
+  = text_field :student, :c  
+  
+  = label :student, :d, 'd'
+  = text_field :student, :d
+
+
+  
+  = label :student, :e, 'e'
+  = text_field :student, :e
+
+  = label :student, :f, 'f'
+  = text_field :student, :f
+
+  = label :student, :g, 'g'
+  = text_field :student, :g
+
+  = label :student, :h, 'h'
+  = text_field :student, :h
+
+  = label :student, :i, 'i'
+  = text_field :student, :i
+
+
+  = submit_tag 'Save Changes'

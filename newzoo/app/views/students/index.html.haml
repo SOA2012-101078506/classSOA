@@ -1,0 +1,31 @@
+-#This file is app/views/movies/index.html.haml
+%h2 All Students
+
+%table#students
+  %thead
+    %tr
+      %th A
+      %th B
+      %th C
+      %th D
+      %th E
+      %th F
+      %th G
+      %th H
+      %th I
+  %tbody
+    - @students.each do |student|
+      %tr
+        %td= student.a 
+        %td= student.b
+        %td= student.c
+        %td= student.d
+        %td= student.e
+        %td= student.f
+        %td= student.g
+        %td= student.h
+        %td= student.i
+        %td= link_to "More about #{student.a}", student_path(student)
+-# add to end of index.html.haml
+
+= link_to 'Add new student', new_student_path

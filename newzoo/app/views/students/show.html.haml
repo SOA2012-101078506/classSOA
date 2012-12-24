@@ -1,0 +1,17 @@
+-# in app/views/movies/show.html.haml
+
+%h2 Details about #{@student.title}
+
+%ul#details
+  %li
+    Rating:
+    = @student.a
+  %li
+    Released on:
+    = @student.b
+
+%h3 Description:
+
+%p#description= @student.c
+
+= link_to 'Back to student list', students_path
