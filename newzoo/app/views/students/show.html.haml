@@ -1,17 +1,36 @@
 -# in app/views/movies/show.html.haml
 
-%h2 Details about #{@student.title}
+%h2 Details about #{@student.id}
 
 %ul#details
   %li
-    Rating:
+    a:
     = @student.a
   %li
-    Released on:
+    b:
     = @student.b
+  %li
+    c:
+    = @student.c
+  %li
+    d:
+    = @student.d
+  %li
+    e:
+    = @student.e
+  %li
+    f:
+    = @student.f
+  %li
+    g:
+    = @student.g
+  %li
+    h:
+    = @student.h
+  %li
+    i:
+    = @student.i
 
-%h3 Description:
-
-%p#description= @student.c
-
+= link_to 'Edit info', edit_student_path(@student)
 = link_to 'Back to student list', students_path
+= link_to 'Delete', student_path(@student), :method => :delete
