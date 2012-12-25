@@ -17,7 +17,7 @@
    def destroy
      @student= Student.find(params[:id])
      @student.destroy
-     flash[:notice] = "Student '#{@student.title}' deleted."
+     flash[:notice] = "Student '#{@student.id}' deleted."
      redirect_to students_path
    end
 
