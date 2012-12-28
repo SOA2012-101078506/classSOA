@@ -3,6 +3,9 @@
    def index
      @students = Student.all
    end
+   def set
+     @students = Student.all
+   end
    def update
      @student = Student.find params[:id]
      @student.update_attributes!(params[:student])
