@@ -7,7 +7,7 @@ gem 'rails', '3.2.8'
 
 gem 'haml'
 gem 'execjs'
-gem 'sqlite3'
+
 
 gem 'therubyracer'
 
@@ -17,6 +17,10 @@ group :assets do
   gem 'sass-rails',   '~> 3.2.3'
   gem 'coffee-rails', '~> 3.2.1'
 
+
+group :production do
+ gem 'pg'
+end
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
   # gem 'therubyracer', :platforms => :ruby
 
@@ -27,6 +31,7 @@ gem 'jquery-rails'
 
 group :development, :test do
   gem 'ruby-debug19'
+  gem 'sqlite3'
 end
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
