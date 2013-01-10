@@ -6,30 +6,29 @@
   = text_field :student, :a
 
   = label :student, :b, 'Grade'
-  = text_field :student, :b
+  = select :student, :b, ['1','2','3','4','5','6']
   
   = label :student, :c, 'Class'
-  = text_field :student, :c  
+  = select :student, :c, ['1','2','3','4','5']  
   
   = label :student, :d, 'Seatnumber'
-  = text_field :student, :d
-
-
+  = select :student, :d, ['1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','16','17','18','19','20','21','22','23','24','25']
   
   = label :student, :e, 'Grouping'
-  = text_field :student, :e
+  = select :student, :e, ['A','B','C','D','E','F']
 
   = label :student, :f, 'Job'
-  = text_field :student, :f
+  = select :student, :f, ['Feeding','Sweeping','Washing']
 
-  = label :student, :g, 'Pet Number'
-  = text_field :student, :g
+  -#= label :student, :g, 'Pet Number'
+  -#= text_field :student, :g
 
   = label :student, :h, 'Pet type'
-  = text_field :student, :h
+  = select :student, :h, ['Dog','Cat','Rabbit','Turtle','lion','Panda']
 
   = label :student, :i, 'Food'
-  = text_field :student, :i
+  = select :student, :i, ['Banana','Meat','Carrot','Bamboo']
 
 
   = submit_tag 'Save Changes'
+  = link_to 'Back to Home Page', students_path

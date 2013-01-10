@@ -78,3 +78,85 @@ form label {
   font-weight: bold;
   color: maroon;
 }
+
+
+
+/*
+ * The below code is for HOMEWORK or MEMO for
+ * the students
+ *
+ *
+ */
+html, body {
+  margin: 0;
+  padding: 0;
+  background: pink;
+  color: DarkSlateGrey;
+  font-family: Tahoma, Verdana, sans-serif,Agency FB;
+  font-size: 10pt;
+width: 850px;
+}
+div#main {
+  margin: 0;
+  padding: 0 20px 20px;
+  width: 850px;
+}
+a {
+  background: transparent;
+  color: maroon;
+  text-decoration: underline;
+  font-weight: bold;
+}
+h1 {
+  color: maroon;
+  font-size: 150%;
+  font-style: italic;
+  display: block;
+  width: 850px;
+  border-bottom: 1px solid DarkSlateGrey;
+}
+h1.title {
+  margin: 0 0 1em;
+  padding: 10px;
+  background-color: orange;
+  color: white;
+  border-bottom: 4px solid gold;
+  font-size: 2em;
+  font-style: normal;
+}
+table#operates {
+  margin: 10px;
+  border-collapse: collapse;
+  width:1280px;
+  border-bottom: 2px solid black; 
+  background: tan; 
+  color: blue;
+}
+table#operates th {
+  border: 2px solid blue;
+  font-weight: bold;  
+  font-style: Arial Black;
+  font-size: 600;
+  color: red;
+  background-color: tan;
+}
+table#operates th, table#operates td {
+  padding: 4px;
+  text-align: center;
+
+}
+#notice, #warning {
+  background: rosybrown;
+  margin: 1em 0;
+  padding: 4px;
+}
+form label {
+  display: block;
+  line-height: 55px;
+  font-weight: bold;
+  color: red;  
+  text-align: italic;
+  font-size: 150;
+  
+  
+}

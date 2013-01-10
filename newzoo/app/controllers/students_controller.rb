@@ -6,6 +6,13 @@
    def set
      @students = Student.all
    end
+   def test
+
+   end
+   def spin
+   end
+   def beach
+   end
    def update
      @student = Student.find params[:id]
      @student.update_attributes!(params[:student])

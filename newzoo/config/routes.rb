@@ -1,7 +1,12 @@
 Newzoo::Application.routes.draw do
   resources :students
+  resources :operates
   root :to => redirect('/students')
   match "set" => "students#set"
+  match "memo" => "operates#memo"
+  match "spin" => "students#spin"
+  match "beach" => "students#beach"
+  
 end
   # The priority is based upon order of creation:
   # first created -> highest priority.
