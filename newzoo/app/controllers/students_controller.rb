@@ -13,6 +13,8 @@
    end
    def beach
    end
+   def food
+   end
    def update
      @student = Student.find params[:id]
      @student.update_attributes!(params[:student])

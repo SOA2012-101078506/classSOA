@@ -6,7 +6,7 @@ Newzoo::Application.routes.draw do
   match "memo" => "operates#memo"
   match "spin" => "students#spin"
   match "beach" => "students#beach"
-  
+  match "food" => "students#food"
 end
   # The priority is based upon order of creation:
   # first created -> highest priority.
