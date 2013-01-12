@@ -1,4 +1,5 @@
 class OperatesController < ApplicationController
+  before_filter:authenticate_user!
    def index#ok
      @operates = Operate.all
    end

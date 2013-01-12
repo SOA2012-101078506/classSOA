@@ -1,6 +1,7 @@
 #This file is app/controllers/movies_controller.rb
  class StudentsController < ApplicationController
    def index
+
      @students = Student.all
    end
    def set

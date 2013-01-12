@@ -1,5 +1,5 @@
 -#This file is app/views/movies/index.html.haml
--#%h2 All Students
+%h2 Welcome to DaDu Elementary School in Hsinchu County 
 -#%link(rel="stylesheet" type="text/css" href="style.css")
 
 -#.page-heading
@@ -44,51 +44,28 @@
 -#devices-tab
   zoo1
 -#<img src="/assets/zoo.png">
+-# if current_user
+  = link_to('logout', destroy_user_session_path, :method => :delete)
+  | 
+  = link_to('change password', edit_registration_path(:user))
+    
 %P{:ALIGN => "center"}
   %IMG{:ALT => "Image Map", :BORDER => "0", :HEIGHT => "599", :SRC => "/assets/zoo.png", :USEMAP => "#zooline", :WIDTH => "803"}/
 
-%BODY
-  %MAP{:NAME => "zooline"}
-    %AREA{:COORDS => "688,218,792,329", :SHAPE => "rect", :href => "set"}
-    %AREA{:COORDS => "691,114,778,206", :SHAPE => "rect", :href => "memo"}
-    %AREA{:COORDS => "13,555,133,597", :HREF => "food", :SHAPE => "rect"}
-    %AREA{:COORDS => "163,152,616,444", :HREF => "beach", :SHAPE => "rect"}
-    -#%AREA{:COORDS => "301,0,400,24", :HREF => "topics.htm", :SHAPE => "rect"}
+  %BODY
+    %MAP{:NAME => "zooline"}
+      %AREA{:COORDS => "688,218,792,329", :SHAPE => "rect", :href => "set"}
+      %AREA{:COORDS => "691,114,778,206", :SHAPE => "rect", :href => "memo"}
+      %AREA{:COORDS => "662,440,786,578", :HREF => "food", :SHAPE => "rect"}
+      %AREA{:COORDS => "163,152,616,444", :HREF => "beach", :SHAPE => "rect"}
+
+      
+      -#%AREA{:COORDS => "301,0,400,24", :HREF => "topics.htm", :SHAPE => "rect"}
 -#%div{:style => "margin-left: 250px; margin-top: -0px; height: 150px; background-color: transparent; width: 750px;"}/
 -##id-top-bar{:calss => "top-bar", :style => "float: left; margin-top:-23px; height: 23px; width: 750px; background-color: transparent;"}/
 
--#%table#students
-  %thead
-    %tr
-      %th Name
-      %th Grade
-      %th Class
-      %th Seatnumber
-      %th Grouping
-      %th Job
-      %th Pet Number
-      %th Pet Type
-      %th Food
-      
-  %tbody
-    - @students.each do |student|
-      %tr
-        %td= student.a 
-        %td= student.b
-        %td= student.c
-        %td= student.d
-        %td= student.e
-        %td= student.f
-        %td= student.g
-        %td= student.h
-        %td= student.i
-        %td= link_to "More about #{student.a}", student_path(student)
--# add to end of index.html.haml
--#options-tab
+-# else
+  = link_to('Register', new_registration_path(:user))
+  |
+  = link_to('login', new_session_path(:user))
 
--#= link_to 'Add new student', new_student_path
-
--#<img src="/assets/zoo.png">
--#reports-tab
--#<img src="/assets/zoo.png">
--#notes-tab

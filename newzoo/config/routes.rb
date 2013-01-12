@@ -1,4 +1,6 @@
 Newzoo::Application.routes.draw do
+  devise_for :users
+
   resources :students
   resources :operates
   root :to => redirect('/students')
