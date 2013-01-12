@@ -1,5 +1,6 @@
 #This file is app/controllers/movies_controller.rb
  class StudentsController < ApplicationController
+   before_filter:authenticate_user!
    def index
 
      @students = Student.all
